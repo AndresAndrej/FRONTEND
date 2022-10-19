@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        /* img {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        } */
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        html,
+        body,
+        .wrapper {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Roboto',
+            sans-serif;
+            }
+
+            .wrapper {
+            /* background: blue; */
+            display: flex;
+            }
+
+        .form,
+        .banner {
+            flex: 1;
+            }
+
+        .picture {
+            width: 100%;
+            height: 100%;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+        }
+
+        .form {
+            margin: 20px auto;
+            padding: 20px;
+            flex-direction: column;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+/* .form {
+    background: lightgray;
+    flex: 1;
+}
+
+.banner {
+    flex: 1;
+} */
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <img src="https://via.placeholder.com/150" alt=""> -->
+
+    <!-- <i class="las la-crow"></i> -->
+
+    <div class="wrapper">
+        <div class="form" Form>
+            <h2>Регистрация пользователя</h2>
+    <form action="server.php" method="get" name="login" target="_blank">
+        Username: <input type="text" name="username" placeholder="Your name" size="10" minlength="6" value="">
+        <hr>
+        E-mail: <input type="email">
+        <hr>
+        Password: <input type="password">
+        <hr>
+        <i class="las la-user-alt"></i>Ваш возраст: <br>
+        <input type="radio" name="alt"> 18-29 <br>
+        <input type="radio" name="alt"> 30-45 <br>
+        <input type="radio" name="alt"> 46-59 <br>
+        <input type="radio" name="alt"> 60+ <br>
+        <hr>
+        <i class="las la-wifi"></i>Используемый браузер: <br>
+        <input type="checkbox" name="chrom" id=""><i class="lab la-chrome"></i>Chrom<br>
+
+        <input type="checkbox" name="explorer" id=""><i class="lab la-internet-explorer"></i>Explorer<br>
+
+        <input type="checkbox" name="firefox" id=""><i class="lab la-firefox"></i>Firefox<br>
+
+        <input type="checkbox" name="safari" id=""><i class="lab la-safari"></i>Safari<br>
+
+        <input type="checkbox" name="andere" id=""><i class="las la-unlink"></i>Другой<br>
+        <hr>
+
+        Ваши пожелания: <br>
+        <textarea style="resize: none;" name="" id="textarea" cols="30" rows="10" placeholder="Write you massege holder."></textarea>
+        <hr>
+        Любимый цвет:
+        <input type="color" name="color" id="">
+        <hr>
+        Дата заполнения:
+        <input type="date" name="date" id="">
+        <hr>
+        <input style="margin-right: 50px" type="button" value="Очистить">
+        <input type="button" value="Отправить">
+        
+
+    </form>
+
+
+        </div>
+        
+        <div class="banner">
+            <figure class="picture"><img class="image" src="https://thumbs.dreamstime.com/z/digital-marketing-konzept-mit-relevanten-ikonen-117615343.jpg" alt=""></figure>
+        </div>
+
+    </div>
+    
+</body>
+</html>
